@@ -1,5 +1,7 @@
 package espruino;
 
+import esx.Either;
+
 // TODO console.log(LED1) to get the type and map things accordinly
 // TODO check reflection (keys)
 // TODO Try run utest
@@ -254,6 +256,3 @@ extern class TypedArray<T>
 	function sort(handler : T -> T -> Int) : TypedArray<T>;
 	function splice(index : Int, howMany : Int, ?el1 : T, ?el2 : T, ?el3 : T, ?el4 : T, ?el5 : T, ?el6 : T)  : TypedArray<T>;
 }
-
-abstract Either<T1, T2>(Dynamic) from T1 from T2 to T1 to T2 {}
-abstract Either3<T1, T2, T3>(Dynamic) from T1 from T2 from T3 to T1 to T2 to T3 {}

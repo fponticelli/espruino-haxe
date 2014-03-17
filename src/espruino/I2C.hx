@@ -1,5 +1,6 @@
 package espruino;
 
+import esx.Either;
 import espruino.Espruino;
 
 @:build(espruino.util.Macro.buildPorts([

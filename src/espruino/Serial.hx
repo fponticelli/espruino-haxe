@@ -1,6 +1,6 @@
 package espruino;
 
-import espruino.Espruino;
+import esx.Either;
 
 @:build(espruino.util.Macro.buildPorts([
 	{prefix : "Serial", range : [1,6], type : "Serial" }

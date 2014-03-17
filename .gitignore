@@ -1,6 +1,7 @@
 
-bin/demo.js
-
-demo.hxml
-
-demo/Demo.hx
+bin
+package.json
+*.hxml
+connect.sh
+demo
+node_modules

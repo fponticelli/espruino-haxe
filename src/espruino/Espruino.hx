@@ -33,7 +33,10 @@ extern class Espruino
 	public static inline function digitalWrite(pin : Either<Pin, Int>, value : Bool) : Void
 		untyped __js__("digitalWrite")(pin, value);
 
-	public static inline function digitalPulse(pin : Either<Pin, Int>, value : Bool, time : Int) : Void
+	public static inline function digitalWriteArray(pins : Array<Either<Pin, Int>>, value : Int) : Void
+		untyped __js__("digitalWrite")(pins, value);
+
+	public static inline function digitalPulse(pin : Either<Pin, Int>, value : Bool, time : Float) : Void
 		untyped __js__("digitalPulse")(pin, value, time);
 
 	public static inline function digitalRead(pin : Either<Pin, Int>) : Bool
